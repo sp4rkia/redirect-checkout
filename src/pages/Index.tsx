@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ExternalLink, RotateCw } from "lucide-react";
 
 const Index = () => {
-  const [countdown, setCountdown] = useState(5);
+  const [countdown, setCountdown] = useState(2);
   const [isRedirecting, setIsRedirecting] = useState(false);
   
   // CONFIGURE O LINK DE DESTINO AQUI
@@ -65,7 +65,7 @@ const Index = () => {
           <div className="w-full bg-gray-200 rounded-full h-2 mb-6 overflow-hidden">
             <div 
               className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-1000 ease-linear"
-              style={{ width: `${((5 - countdown) / 5) * 100}%` }}
+              style={{ width: `${((2 - countdown) / 2) * 100}%` }}
             />
           </div>
 
