@@ -7,7 +7,7 @@ const Index = () => {
   const [isRedirecting, setIsRedirecting] = useState(false);
   
   // CONFIGURE O LINK DE DESTINO AQUI
-  const redirectUrl = "https://www.google.com";
+  const redirectUrl = "https://pay.hotmart.com/F99929935R?bid=1748611806470";
   
   useEffect(() => {
     const timer = setInterval(() => {
