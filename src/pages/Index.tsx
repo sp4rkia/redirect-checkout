@@ -8,31 +8,30 @@ const Index = () => {
   useEffect(() => {
     // Captura os parâmetros UTM da URL atual
     const urlParams = new URLSearchParams(window.location.search);
-    const utmParams = new URLSearchParams();
     
-    // Lista de parâmetros UTM para capturar
-    const utmKeys = [
+    // Define a ordem específica dos parâmetros UTM
+    const utmOrder = [
       'utm_source',
-      'utm_medium', 
       'utm_campaign',
-      'utm_term',
+      'utm_medium',
       'utm_content',
-      'fbclid',
-      'gclid'
+      'utm_term',
+      'xcod'
     ];
     
-    // Adiciona os parâmetros UTM encontrados
-    utmKeys.forEach(key => {
+    // Constrói a string de parâmetros na ordem específica
+    const utmParts = [];
+    utmOrder.forEach(key => {
       const value = urlParams.get(key);
       if (value) {
-        utmParams.append(key, value);
+        utmParts.push(`${key}=${encodeURIComponent(value)}`);
       }
     });
     
-    // Constrói a URL final com os parâmetros UTM
+    // Constrói a URL final com os parâmetros UTM na ordem correta
     let finalUrl = baseRedirectUrl;
-    if (utmParams.toString()) {
-      finalUrl += '&' + utmParams.toString();
+    if (utmParts.length > 0) {
+      finalUrl += '&' + utmParts.join('&');
     }
     
     console.log('Redirecionando para:', finalUrl);
