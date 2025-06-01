@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 const redirectLinks = {
   "recetacanela": "https://pay.hotmart.com/D100035039I?off=bzgv2k5y&bid=1748701268238",
   "recetacompleta": "https://pay.hotmart.com/F99929935R?bid=1748611806470",
+  "recetacompleta2": "https://pay.hotmart.com/F99929935R?off=rd6yb5zv&bid=1748815150823",
 };
 
 const RedirectPage = () => {
