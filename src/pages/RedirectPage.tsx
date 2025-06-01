@@ -17,7 +17,6 @@ const RedirectPage = () => {
     const baseRedirectUrl = redirectLinks[linkId as keyof typeof redirectLinks];
     
     if (!baseRedirectUrl) {
-      console.error(`Link não encontrado para: ${linkId}`);
       window.location.href = "/";
       return;
     }
@@ -50,18 +49,10 @@ const RedirectPage = () => {
       finalUrl += '&' + utmParts.join('&');
     }
     
-    console.log(`Redirecionando ${linkId} para:`, finalUrl);
     window.location.href = finalUrl;
   }, [linkId]);
 
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="text-center">
-        <h2 className="text-xl font-semibold mb-2">Redirecionando...</h2>
-        <p className="text-gray-600">Aguarde um momento.</p>
-      </div>
-    </div>
-  );
+  return null;
 };
 
 export default RedirectPage;
