@@ -4,10 +4,8 @@ import { useParams } from "react-router-dom";
 
 // Configuração dos links de redirecionamento
 const redirectLinks = {
-  "hotmart1": "https://pay.hotmart.com/F99929935R?bid=1748611806470",
-  "hotmart2": "https://pay.hotmart.com/EXEMPLO2?bid=1234567890",
-  "hotmart3": "https://pay.hotmart.com/EXEMPLO3?bid=0987654321",
-  // Adicione mais links conforme necessário
+  "recetacanela": "https://pay.hotmart.com/D100035039I?off=bzgv2k5y&bid=1748701268238",
+  "recetacompleta": "https://pay.hotmart.com/F99929935R?bid=1748611806470",
 };
 
 const RedirectPage = () => {
