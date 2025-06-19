@@ -4,9 +4,10 @@ import { useParams } from "react-router-dom";
 
 // Configuração dos links de redirecionamento
 const redirectLinks = {
-  "recetacanela": "https://pay.hotmart.com/D100035039I?off=bzgv2k5y&bid=1748701268238",
-  "recetacompleta": "https://pay.hotmart.com/F99929935R?bid=1748611806470",
-  "recetacompleta2": "https://pay.hotmart.com/F99929935R?off=rd6yb5zv&bid=1748815150823",
+  "receta-teste": "https://hotmart.com/receta-test",
+  "produto2": "https://checkout.com/produto2",
+  "produto3": "https://checkout.com/produto3",
+  "produto4": "https://checkout.com/produto3",
 };
 
 const RedirectPage = () => {
