@@ -7,6 +7,7 @@ const redirectLinks = {
   "recetamel": "https://pay.hotmart.com/A100394805G",
   "recetabicarbonato": "https://pay.hotmart.com/A100395802S?bid=1750422773449",
   "recetacanelateste": "https://pay.hotmart.com/S100395327O",
+  "recetadelcanelat": "https://pay.hotmart.com/D100035039I?off=bzgv2k5y",
 };
 
 const RedirectPage = () => {
